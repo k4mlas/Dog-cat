@@ -1,12 +1,67 @@
 @media (min-width: 992px) {
 	.header {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(6, 1fr);
+		.hamburger {
+			display: none;
+		}
+		.nav {
+			&-desktop {
+				display: block;
+				grid-column: 2/3;
+				grid-row: 1/2;
+				margin-top: 15%;
+				text-align: center;
+				&-link {
+					font-family: 'Gruppo', cursive;
+					font-size: 2rem;
+					text-decoration: none;
+					text-transform: uppercase;
+					padding: 0.5em;
+					color: $white;
+					transition: color 0.5s;
+					&:hover {
+						color: $dark;
+					}
+				}
+			}
+			&-mobile {
+				display: none;
+			}
+		}
+
 		&__text {
+			grid-column: 2/3;
+			grid-row: 3/4;
+
 			&-title {
+				position: static;
 				font-size: 5.8rem;
 			}
 			&-titleCd {
-				font-size: 2rem;
+				position: static;
+				font-size: 1.8rem;
 			}
+		}
+		&__imgOne {
+			grid-column: 1/2;
+			grid-row: 1/7;
+		}
+		&__imgTwo {
+			grid-column: 3/4;
+			grid-row: 1/7;
+			background-image: url(../img/pexels-tehmasip-khan-6601811.jpg);
+			background-position: center;
+			background-size: cover;
+			border: 7px solid $white;
+			filter: drop-shadow(2);
+		}
+		&__bg-icon-one,
+		&__bg-icon-two {
+			display: none;
+		}
+		.header__arrow {
+			display: none;
 		}
 	}
 }
