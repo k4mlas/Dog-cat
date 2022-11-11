@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Gruppo", cursive;
+  font-size: 1.6rem;
+  color: black;
+  background-color: #D89C80;
+}
+
+.header {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+  height: 100vh;
+}
+.header .nav-desktop {
+  display: none;
+}
+.header .nav-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(230, 223, 223);
+  transform: translateX(-102%);
+  transition: transform 0.5s;
+  z-index: 10;
+}
+.header .nav-mobile--active {
+  transform: translateX(0);
+}
+.header .nav-mobile-link {
+  font-family: "Gruppo", cursive;
+  font-size: 2.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 1.5em;
+  padding: 0.5em;
+  border: 1px solid #9c4d2d;
+  color: #9c4d2d;
+  transition: color 0.5s;
+}
+.header .nav-mobile-link:hover {
+  color: #D89C80;
+}
+.header__text {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  text-align: center;
+}
+.header__text-title {
+  position: relative;
+  top: 35%;
+  font-size: 4.8rem;
+  font-family: "Cormorant Garamond", serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+.header__text-title span {
+  color: rgb(230, 223, 223);
+}
+.header__text-titleCd {
+  position: relative;
+  font-size: 1.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  top: 40%;
+}
+.header__img {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  background-position: center;
+  background-size: cover;
+  border: 7px solid rgb(230, 223, 223);
+  background-image: url(../img/pexels-tehmasip-khan-6601811.jpg);
+  filter: drop-shadow(20);
+}
+.header__bg-icon-one, .header__bg-icon-two {
+  display: none;
+}
+.header .header__arrow {
+  display: none;
+}
+.header .hamburger {
+  position: absolute;
+  top: 3em;
+  left: 1em;
+  transform: translateY(-50%);
+  z-index: 500;
+}
+.header .hamburger-inner, .header .hamburger-inner::after, .header .hamburger-inner::before {
+  background-color: rgb(230, 223, 223);
+  z-index: 500;
+}
+
+@media (min-width: 380px) {
+  .header__text-title {
+    font-size: 5.8rem;
+  }
+  .header__text-titleCd {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 762px) {
+  .header__text-title {
+    font-size: 7.8rem;
+  }
+  .header__text-titleCd {
+    font-size: 3rem;
+  }
+  .header__img {
+    background-position: 50% 40%;
+    background-size: cover;
+    border: 7px solid rgb(230, 223, 223);
+    background-image: url(../img/header-BIG.jpg);
+  }
+}
+@media (min-width: 992px) {
+  .header__text-title {
+    font-size: 5.8rem;
+  }
+  .header__text-titleCd {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=main.css.map */

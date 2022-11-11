@@ -1,0 +1,12 @@
+@media (min-width: 380px) {
+	.header {
+		&__text {
+			&-title {
+				font-size: 5.8rem;
+			}
+			&-titleCd {
+				font-size: 2rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,131 @@
+//Importy-----------------------------------------------
+@import './_colors.scss';
+
+//Reset CSS---------------------------------------------
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Gruppo', cursive;
+	font-size: 1.6rem;
+	color: $black;
+	background-color: $mainColor;
+}
+
+// font-family: 'Barlow', sans-serif;
+// font-family: 'Cormorant Garamond', serif;
+// font-family: 'Gruppo', cursive;
+
+//header----------------------------------------------
+
+.header {
+	position: relative; // będę pozycjonował elementy
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	width: 100%;
+	height: 100vh;
+	.nav {
+		&-desktop {
+			display: none;
+		}
+		&-mobile {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			background-color: $white;
+			transform: translateX(-102%);
+			transition: transform 0.5s;
+			z-index: 10;
+			&--active {
+				transform: translateX(0);
+			}
+			&-link {
+				font-family: 'Gruppo', cursive;
+				font-size: 2.8rem;
+				text-decoration: none;
+				text-transform: uppercase;
+				margin-bottom: 1.5em;
+				padding: 0.5em;
+				border: 1px solid $dark;
+				color: $dark;
+				transition: color 0.5s;
+				&:hover {
+					color: $mainColor;
+				}
+			}
+		}
+	}
+
+	&__text {
+		grid-column: 1/4;
+		grid-row: 1/2;
+		text-align: center;
+		&-title {
+			position: relative;
+			top: 35%;
+			font-size: 4.8rem;
+			font-family: 'Cormorant Garamond', serif;
+			text-align: center;
+			text-transform: uppercase;
+			span {
+				color: $white;
+			}
+		}
+		&-titleCd {
+			position: relative;
+			font-size: 1.4rem;
+			text-align: center;
+			text-transform: uppercase;
+			top: 40%;
+		}
+	}
+	&__img {
+		grid-column: 1/4;
+		grid-row: 2/3;
+		background-position: center;
+		background-size: cover;
+		border: 7px solid $white;
+		background-image: url(../img/pexels-tehmasip-khan-6601811.jpg);
+		filter: drop-shadow(20);
+	}
+	&__bg-icon-one,
+	&__bg-icon-two {
+		display: none;
+	}
+	.header__arrow {
+		display: none;
+	}
+	.hamburger {
+		position: absolute;
+		top: 3em;
+		left: 1em;
+		transform: translateY(-50%);
+		z-index: 500;
+		&-inner,
+		&-inner::after,
+		&-inner::before {
+			background-color: $white;
+			z-index: 500;
+		}
+	}
+}
+
+@import './_small.scss';
+@import './_medium.scss';
+@import './_large.scss';
