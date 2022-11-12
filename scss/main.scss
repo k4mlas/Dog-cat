@@ -1,7 +1,8 @@
-//Importy-----------------------------------------------
+//Imports-----------------------------------------------------------------------
 @import './_colors.scss';
+@import './_animations.scss';
 
-//Reset CSS---------------------------------------------
+//Reset CSS---------------------------------------------------------------------
 *,
 *::before,
 *::after {
@@ -25,7 +26,7 @@ body {
 // font-family: 'Cormorant Garamond', serif;
 // font-family: 'Gruppo', cursive;
 
-//header----------------------------------------------
+//Header-------------------------------------------------------------------------
 
 .header {
 	position: relative; // będę pozycjonował elementy
@@ -103,7 +104,7 @@ body {
 		background-size: cover;
 		border: 7px solid $white;
 		background-image: url(../img/pexels-tehmasip-khan-6601811.jpg);
-		filter: drop-shadow(20);
+		filter:drop-shadow(2)
 	}
 	&__bg-icon-one,
 	&__bg-icon-two {
@@ -126,6 +127,8 @@ body {
 		}
 	}
 }
+
+//Imports-----------------------------------------------------------------------------------
 
 @import './_small.scss';
 @import './_medium.scss';
