@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -39,7 +40,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgb(230, 223, 223);
+  background-color: #e0d7d7;
   transform: translateX(-102%);
   transition: transform 0.5s;
   z-index: 10;
@@ -75,11 +76,12 @@ body {
   text-transform: uppercase;
 }
 .header__text-title span {
-  color: rgb(230, 223, 223);
+  color: #e0d7d7;
 }
 .header__text-titleCd {
   position: relative;
-  font-size: 1.4rem;
+  padding: 1em;
+  font-size: 1.3rem;
   text-align: center;
   text-transform: uppercase;
   top: 40%;
@@ -89,7 +91,7 @@ body {
   grid-row: 2/3;
   background-position: center;
   background-size: cover;
-  border: 7px solid rgb(230, 223, 223);
+  border: 7px solid #e0d7d7;
   background-image: url(../img/pexels-tehmasip-khan-6601811.jpg);
   filter: drop-shadow(20);
 }
@@ -107,7 +109,7 @@ body {
   z-index: 500;
 }
 .header .hamburger-inner, .header .hamburger-inner::after, .header .hamburger-inner::before {
-  background-color: rgb(230, 223, 223);
+  background-color: #e0d7d7;
   z-index: 500;
 }
 
@@ -116,7 +118,7 @@ body {
     font-size: 5.8rem;
   }
   .header__text-titleCd {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }
 @media (min-width: 762px) {
@@ -129,7 +131,7 @@ body {
   .header__img {
     background-position: 50% 40%;
     background-size: cover;
-    border: 7px solid rgb(230, 223, 223);
+    border: 7px solid #e0d7d7;
     background-image: url(../img/header-BIG.jpg);
   }
 }
@@ -154,7 +156,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     padding: 0.5em;
-    color: rgb(230, 223, 223);
+    color: #e0d7d7;
     transition: color 0.5s;
   }
   .header .nav-desktop-link:hover {
@@ -173,7 +175,7 @@ body {
   }
   .header__text-titleCd {
     position: static;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .header__imgOne {
     grid-column: 1/2;
@@ -182,16 +184,71 @@ body {
   .header__imgTwo {
     grid-column: 3/4;
     grid-row: 1/7;
-    background-image: url(../img/pexels-tehmasip-khan-6601811.jpg);
+    background-image: url(../img/pexels-mariÃ¡n-Å¡icko-4214919-2.jpg);
     background-position: center;
     background-size: cover;
-    border: 7px solid rgb(230, 223, 223);
+    border: 7px solid #e0d7d7;
     filter: drop-shadow(2);
   }
   .header__bg-icon-one, .header__bg-icon-two {
     display: none;
   }
   .header .header__arrow {
-    display: none;
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+  .header .header__arrow-icon {
+    width: 5em;
+    padding: 0.3em;
+    border: 1px solid #e0d7d7;
+  }
+}
+@media (min-width: 1200px) {
+  .header .nav-desktop-link {
+    font-size: 2.2rem;
+  }
+  .header__text-title {
+    font-size: 6.8rem;
+  }
+  .header__text-titleCd {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1920px) {
+  .header .nav-desktop-link {
+    font-size: 3.5rem;
+  }
+  .header__text-title {
+    font-size: 8rem;
+  }
+  .header__text-titleCd {
+    font-size: 2.9rem;
+  }
+}
+@media (min-width: 2560px) {
+  .header .nav-desktop-link {
+    font-size: 4.5rem;
+  }
+  .header__text-title {
+    font-size: 10rem;
+  }
+  .header__text-titleCd {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 3840px) {
+  .header .nav-desktop-link {
+    font-size: 6rem;
+  }
+  .header__text-title {
+    font-size: 15rem;
+  }
+  .header__text-titleCd {
+    font-size: 5rem;
   }
 }/*# sourceMappingURL=main.css.map */

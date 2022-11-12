@@ -1,3 +1,5 @@
+//992px-------------------------------------------------------------------
+
 @media (min-width: 992px) {
 	.header {
 		grid-template-columns: repeat(3, 1fr);
@@ -40,7 +42,7 @@
 			}
 			&-titleCd {
 				position: static;
-				font-size: 1.8rem;
+				font-size: 1.5rem;
 			}
 		}
 		&__imgOne {
@@ -50,7 +52,7 @@
 		&__imgTwo {
 			grid-column: 3/4;
 			grid-row: 1/7;
-			background-image: url(../img/pexels-tehmasip-khan-6601811.jpg);
+			background-image: url(../img/pexels-mariÃ¡n-Å¡icko-4214919-2.jpg);
 			background-position: center;
 			background-size: cover;
 			border: 7px solid $white;
@@ -61,7 +63,107 @@
 			display: none;
 		}
 		.header__arrow {
-			display: none;
+			display: block;
+			position: absolute;
+			bottom: 0%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			grid-column: 2/3;
+			grid-row: 5/6;
+			&-icon {
+				width: 5em;
+				padding: 0.3em;
+				border: 1px solid $white;
+				
+			}
+		}
+	}
+}
+
+//1200px----------------------------------------------------------------------------
+
+@media (min-width: 1200px) {
+	.header {
+		.nav {
+			&-desktop {
+				&-link {
+					font-size: 2.2rem;
+				}
+			}
+		}
+		&__text {
+			&-title {
+				font-size: 6.8rem;
+			}
+			&-titleCd {
+				font-size: 1.8rem;
+			}
+		}
+	}
+}
+
+//1920--------------------------------------------------------------------
+
+@media (min-width: 1920px) {
+	.header {
+		.nav {
+			&-desktop {
+				&-link {
+					font-size: 3.5rem;
+				}
+			}
+		}
+		&__text {
+			&-title {
+				font-size: 8rem;
+			}
+			&-titleCd {
+				font-size: 2.9rem;
+			}
+		}
+	}
+}
+
+//2560px-----------------------------------------------------------------------
+
+@media (min-width: 2560px) {
+	.header {
+		.nav {
+			&-desktop {
+				&-link {
+					font-size: 4.5rem;
+				}
+			}
+		}
+		&__text {
+			&-title {
+				font-size: 10rem;
+			}
+			&-titleCd {
+				font-size: 3.5rem;
+			}
+		}
+	}
+}
+
+//3840-------------------------------------------------------------
+
+@media (min-width: 3840px) {
+	.header {
+		.nav {
+			&-desktop {
+				&-link {
+					font-size: 6rem;
+				}
+			}
+		}
+		&__text {
+			&-title {
+				font-size: 15rem;
+			}
+			&-titleCd {
+				font-size: 5rem;
+			}
 		}
 	}
 }
