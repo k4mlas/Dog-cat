@@ -81,6 +81,45 @@
 			}
 		}
 	}
+
+	.about {
+		.wrapper {
+			.aboutUs {
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+
+				&__img {
+					img {
+						margin: 1em;
+						width: 300px;
+						height: 300px;
+						border: 7px solid $white;
+						border-radius: 50%;
+					}
+				}
+				&__text {
+					transform: translateY(15%);
+					&-one {
+						font-family: 'Cormorant Garamond', serif;
+						font-style: italic;
+						font-size: 3.5rem;
+						color: $white;
+					}
+					&-two {
+						margin-top: 1em;
+						font-size: 3.5rem;
+						text-transform: uppercase;
+					}
+					&-three {
+						font-size: 2.5rem;
+						text-transform: capitalize;
+					}
+				}
+			}
+		}
+	}
 }
 
 //1200px----------------------------------------------------------------------------
