@@ -2,23 +2,45 @@
 @-webkit-keyframes pulse {
   0% {
     transform: scale(1);
+    opacity: 0;
     bottom: -10%;
   }
-  100% {
+  50% {
     transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
     bottom: -70%;
   }
 }
 @keyframes pulse {
   0% {
     transform: scale(1);
+    opacity: 0;
     bottom: -10%;
   }
-  100% {
+  50% {
     transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
     bottom: -70%;
   }
 }
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.section-padding {
+  padding: 4em 2em;
+}
+
 *,
 *::before,
 *::after {
@@ -113,7 +135,7 @@ body {
   background-size: cover;
   border: 7px solid #e0d7d7;
   background-image: url(../img/pexels-tehmasip-khan-6601811.jpg);
-  filter: drop-shadow(2);
+  filter: grayscale(2);
 }
 .header__bg-icon-one, .header__bg-icon-two {
   display: none;
@@ -131,6 +153,39 @@ body {
 .header .hamburger-inner, .header .hamburger-inner::after, .header .hamburger-inner::before {
   background-color: #e0d7d7;
   z-index: 500;
+}
+
+.about {
+  background-color: #9c4d2d;
+}
+.about .wrapper .aboutUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.about .wrapper .aboutUs__img img {
+  margin: 1em;
+  width: 200px;
+  height: 200px;
+  border: 7px solid #e0d7d7;
+  border-radius: 50%;
+}
+.about .wrapper .aboutUs__text-one {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 3.5rem;
+  color: #e0d7d7;
+}
+.about .wrapper .aboutUs__text-two {
+  margin-top: 1em;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.about .wrapper .aboutUs__text-three {
+  font-size: 2rem;
+  text-transform: capitalize;
 }
 
 @media (min-width: 380px) {
@@ -208,7 +263,7 @@ body {
     background-position: center;
     background-size: cover;
     border: 7px solid #e0d7d7;
-    filter: drop-shadow(2);
+    filter: grayscale(2);
   }
   .header__bg-icon-one, .header__bg-icon-two {
     display: none;
@@ -225,7 +280,6 @@ body {
   .header .header__arrow-icon {
     width: 5em;
     padding: 0.3em;
-    border: 1px solid black;
     -webkit-animation: pulse linear 3s infinite;
             animation: pulse linear 3s infinite;
   }

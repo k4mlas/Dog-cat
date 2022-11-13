@@ -1,6 +1,7 @@
 //Imports-----------------------------------------------------------------------
 @import './_colors.scss';
 @import './_animations.scss';
+@import './_component.scss';
 
 //Reset CSS---------------------------------------------------------------------
 *,
@@ -104,7 +105,7 @@ body {
 		background-size: cover;
 		border: 7px solid $white;
 		background-image: url(../img/pexels-tehmasip-khan-6601811.jpg);
-		filter:drop-shadow(2)
+		filter: grayscale(2);
 	}
 	&__bg-icon-one,
 	&__bg-icon-two {
@@ -124,6 +125,47 @@ body {
 		&-inner::before {
 			background-color: $white;
 			z-index: 500;
+		}
+	}
+}
+
+//Section aboutUs-----------------------------------------------------------------------------------
+.about {
+	background-color: $dark;
+	.wrapper {
+		.aboutUs {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+
+			&__img {
+				img {
+					margin: 1em;
+					width: 200px;
+					height: 200px;
+					border: 7px solid $white;
+					border-radius: 50%;
+				}
+			}
+			&__text {
+				&-one {
+					font-family: 'Cormorant Garamond', serif;
+					font-style: italic;
+					font-size: 3.5rem;
+					color: $white;
+				}
+				&-two {
+					margin-top: 1em;
+					font-size: 3rem;
+					text-transform: uppercase;
+				}
+				&-three {
+					font-size: 2rem;
+					text-transform: capitalize;
+				}
+			}
 		}
 	}
 }
