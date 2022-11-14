@@ -85,8 +85,17 @@ body {
 			font-family: 'Cormorant Garamond', serif;
 			text-align: center;
 			text-transform: uppercase;
+			transition: color .5s;
+			cursor: pointer;
 			span {
 				color: $white;
+				transition: color .5s;
+			}
+			&:hover {
+				color:$white;
+				span {
+					color:$black;
+				}
 			}
 		}
 		&-titleCd {
@@ -143,8 +152,8 @@ body {
 			&__img {
 				img {
 					margin: 1em;
-					width: 200px;
-					height: 200px;
+					width: 150px;
+					height: 150px;
 					border: 7px solid $white;
 					border-radius: 50%;
 				}
@@ -153,7 +162,7 @@ body {
 				&-one {
 					font-family: 'Cormorant Garamond', serif;
 					font-style: italic;
-					font-size: 3rem;
+					font-size: 2.3rem;
 					color: $white;
 				}
 				&-two {

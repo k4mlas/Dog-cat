@@ -116,9 +116,18 @@ body {
   font-family: "Cormorant Garamond", serif;
   text-align: center;
   text-transform: uppercase;
+  transition: color 0.5s;
+  cursor: pointer;
 }
 .header__text-title span {
   color: #e0d7d7;
+  transition: color 0.5s;
+}
+.header__text-title:hover {
+  color: #e0d7d7;
+}
+.header__text-title:hover span {
+  color: black;
 }
 .header__text-titleCd {
   position: relative;
@@ -167,15 +176,15 @@ body {
 }
 .about .wrapper .aboutUs__img img {
   margin: 1em;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border: 7px solid #e0d7d7;
   border-radius: 50%;
 }
 .about .wrapper .aboutUs__text-one {
   font-family: "Cormorant Garamond", serif;
   font-style: italic;
-  font-size: 3rem;
+  font-size: 2.3rem;
   color: #e0d7d7;
 }
 .about .wrapper .aboutUs__text-two {
@@ -295,8 +304,8 @@ body {
   }
   .about .wrapper .aboutUs__img img {
     margin: 1em;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border: 7px solid #e0d7d7;
     border-radius: 50%;
   }
@@ -306,12 +315,12 @@ body {
   .about .wrapper .aboutUs__text-one {
     font-family: "Cormorant Garamond", serif;
     font-style: italic;
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: #e0d7d7;
   }
   .about .wrapper .aboutUs__text-two {
     margin-top: 1em;
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-transform: uppercase;
   }
   .about .wrapper .aboutUs__text-three {
