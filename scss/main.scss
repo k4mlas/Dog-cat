@@ -85,16 +85,16 @@ body {
 			font-family: 'Cormorant Garamond', serif;
 			text-align: center;
 			text-transform: uppercase;
-			transition: color .5s;
+			transition: color 0.5s;
 			cursor: pointer;
 			span {
 				color: $white;
-				transition: color .5s;
+				transition: color 0.5s;
 			}
 			&:hover {
-				color:$white;
+				color: $white;
 				span {
-					color:$black;
+					color: $black;
 				}
 			}
 		}
@@ -113,7 +113,7 @@ body {
 		background-position: center;
 		background-size: cover;
 		border: 7px solid $white;
-		background-image: url(../img/pexels-tehmasip-khan-6601811.jpg);
+		background-image: url(../img/header0.jpg);
 		filter: grayscale(2);
 	}
 	&__bg-icon-one,
@@ -178,6 +178,8 @@ body {
 		}
 	}
 }
+
+
 
 //Imports-----------------------------------------------------------------------------------
 

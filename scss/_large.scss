@@ -46,13 +46,14 @@
 			}
 		}
 		&__imgOne {
+			background-image: url(../img/header2.jpg);
 			grid-column: 1/2;
 			grid-row: 1/7;
 		}
 		&__imgTwo {
 			grid-column: 3/4;
 			grid-row: 1/7;
-			background-image: url(../img/pexels-mariÃ¡n-Å¡icko-4214919-2.jpg);
+			background-image: url(../img/header1.jpg);
 			background-position: center;
 			background-size: cover;
 			border: 7px solid $white;
