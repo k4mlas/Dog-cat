@@ -121,6 +121,31 @@
 			}
 		}
 	}
+	.aboutCards {
+		.wrapper {
+			.cards {
+				flex-direction: row;
+				justify-content: space-between;
+
+				&__card {
+					color: $black;
+					margin-right: 2em;
+					margin-bottom: 0;
+					height: 300px;
+					img {
+						width: 45%;
+					}
+					h3 {
+						font-size: 2.5rem;
+						margin-bottom: 1em;
+					}
+					p {
+						font-size: 1.9rem;
+					}
+				}
+			}
+		}
+	}
 }
 
 //1200px----------------------------------------------------------------------------

@@ -8,11 +8,20 @@
 				font-size: 3rem;
 			}
 		}
-        &__img {
-            background-position: 50% 40%;
-            background-size:cover;
-            border: 7px solid $white;
-            background-image: url(../img/header-BIG.jpg); 
-        }
+		&__img {
+			background-position: 50% 40%;
+			background-size: cover;
+			border: 7px solid $white;
+			background-image: url(../img/header-BIG.jpg);
+		}
+	}
+	.aboutCards {
+		.wrapper {
+			.cards {
+				&__card {
+					width: 450px;
+				}
+			}
+		}
 	}
 }

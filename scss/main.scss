@@ -86,7 +86,6 @@ body {
 			text-align: center;
 			text-transform: uppercase;
 			transition: color 0.5s;
-			cursor: pointer;
 			span {
 				color: $white;
 				transition: color 0.5s;
@@ -179,7 +178,42 @@ body {
 	}
 }
 
+//Section about Cards-----------------------------------------------------------------------
 
+.aboutCards {
+	.wrapper {
+		.cards {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			&__card {
+				color: $black;
+				margin-bottom: 5em;
+				border: 7px solid $white;
+				padding: 2em;
+				width: 350px;
+				transition: background-color 0.5s;
+				img {
+					width: 45%;
+				}
+				h3 {
+					font-size: 2.5rem;
+					text-transform: uppercase;
+					margin-bottom: 1em;
+				}
+				p {
+					font-size: 1.9rem;
+				}
+				&:hover {
+					background-color: $dark;
+					color: $white;
+				}
+			}
+		}
+	}
+}
 
 //Imports-----------------------------------------------------------------------------------
 

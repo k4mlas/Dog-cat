@@ -57,7 +57,7 @@ body {
   font-family: "Gruppo", cursive;
   font-size: 1.6rem;
   color: black;
-  background-color: #D89C80;
+  background-color: #d89c80;
 }
 
 .header {
@@ -101,7 +101,7 @@ body {
   transition: color 0.5s;
 }
 .header .nav-mobile-link:hover {
-  color: #D89C80;
+  color: #d89c80;
 }
 .header__text {
   grid-column: 1/4;
@@ -116,7 +116,6 @@ body {
   text-align: center;
   text-transform: uppercase;
   transition: color 0.5s;
-  cursor: pointer;
 }
 .header__text-title span {
   color: #e0d7d7;
@@ -196,6 +195,37 @@ body {
   text-transform: capitalize;
 }
 
+.aboutCards .wrapper .cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.aboutCards .wrapper .cards__card {
+  color: black;
+  margin-bottom: 5em;
+  border: 7px solid #e0d7d7;
+  padding: 2em;
+  width: 350px;
+  transition: background-color 0.5s;
+}
+.aboutCards .wrapper .cards__card img {
+  width: 45%;
+}
+.aboutCards .wrapper .cards__card h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+.aboutCards .wrapper .cards__card p {
+  font-size: 1.9rem;
+}
+.aboutCards .wrapper .cards__card:hover {
+  background-color: #9c4d2d;
+  color: #e0d7d7;
+}
+
 @media (min-width: 380px) {
   .header__text-title {
     font-size: 5.8rem;
@@ -216,6 +246,9 @@ body {
     background-size: cover;
     border: 7px solid #e0d7d7;
     background-image: url(../img/header-BIG.jpg);
+  }
+  .aboutCards .wrapper .cards__card {
+    width: 450px;
   }
 }
 @media (min-width: 992px) {
@@ -326,6 +359,26 @@ body {
   .about .wrapper .aboutUs__text-three {
     font-size: 2.5rem;
     text-transform: capitalize;
+  }
+  .aboutCards .wrapper .cards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .aboutCards .wrapper .cards__card {
+    color: black;
+    margin-right: 2em;
+    margin-bottom: 0;
+    height: 300px;
+  }
+  .aboutCards .wrapper .cards__card img {
+    width: 45%;
+  }
+  .aboutCards .wrapper .cards__card h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+  }
+  .aboutCards .wrapper .cards__card p {
+    font-size: 1.9rem;
   }
 }
 @media (min-width: 1200px) {
