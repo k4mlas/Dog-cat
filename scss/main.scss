@@ -181,6 +181,11 @@ body {
 //Section about Cards-----------------------------------------------------------------------
 
 .aboutCards {
+	background-image: url(../img/longDog1.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	border: 7px solid $white;
 	.wrapper {
 		.cards {
 			display: flex;
@@ -189,12 +194,13 @@ body {
 			align-items: center;
 			text-align: center;
 			&__card {
-				color: $black;
 				margin-bottom: 5em;
-				border: 7px solid $white;
 				padding: 2em;
-				width: 350px;
-				transition: background-color 0.5s;
+				width: 250px;
+				border: 7px solid $white;
+				background-color: $whiteTrans;
+				color: $dark;
+				transition: background-color 0.5s, transform 0.5s;
 				img {
 					width: 45%;
 				}
@@ -207,8 +213,9 @@ body {
 					font-size: 1.9rem;
 				}
 				&:hover {
-					background-color: $dark;
-					color: $white;
+					background-color: $white;
+					color: $dark;
+					transform: scale(1.1);
 				}
 			}
 		}

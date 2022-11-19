@@ -195,6 +195,13 @@ body {
   text-transform: capitalize;
 }
 
+.aboutCards {
+  background-image: url(../img/longDog1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  border: 7px solid #e0d7d7;
+}
 .aboutCards .wrapper .cards {
   display: flex;
   flex-direction: column;
@@ -203,12 +210,13 @@ body {
   text-align: center;
 }
 .aboutCards .wrapper .cards__card {
-  color: black;
   margin-bottom: 5em;
-  border: 7px solid #e0d7d7;
   padding: 2em;
-  width: 350px;
-  transition: background-color 0.5s;
+  width: 250px;
+  border: 7px solid #e0d7d7;
+  background-color: rgba(255, 255, 255, 0.45);
+  color: #9c4d2d;
+  transition: background-color 0.5s, transform 0.5s;
 }
 .aboutCards .wrapper .cards__card img {
   width: 45%;
@@ -222,8 +230,9 @@ body {
   font-size: 1.9rem;
 }
 .aboutCards .wrapper .cards__card:hover {
-  background-color: #9c4d2d;
-  color: #e0d7d7;
+  background-color: #e0d7d7;
+  color: #9c4d2d;
+  transform: scale(1.1);
 }
 
 @media (min-width: 380px) {
@@ -241,11 +250,11 @@ body {
   .header__text-titleCd {
     font-size: 3rem;
   }
-  .header__img {
-    background-position: 50% 40%;
+  .header__imgOne {
+    background-position: 30% 60%;
     background-size: cover;
     border: 7px solid #e0d7d7;
-    background-image: url(../img/header-BIG.jpg);
+    background-image: url(../img/header0.jpg);
   }
   .aboutCards .wrapper .cards__card {
     width: 450px;
@@ -324,6 +333,7 @@ body {
     padding: 0.3em;
     -webkit-animation: pulse linear 3s infinite;
             animation: pulse linear 3s infinite;
+    border: 1px solid #e0d7d7;
   }
   .header .header__arrow-icon:hover {
     -webkit-animation: none;
@@ -360,14 +370,18 @@ body {
     font-size: 2.5rem;
     text-transform: capitalize;
   }
+  .aboutCards {
+    background-image: url(../img/longDog2.jpg);
+  }
   .aboutCards .wrapper .cards {
+    height: 80vh;
     flex-direction: row;
     justify-content: space-between;
   }
   .aboutCards .wrapper .cards__card {
-    color: black;
-    margin-right: 2em;
     margin-bottom: 0;
+    margin-right: 0;
+    width: 300px;
     height: 300px;
   }
   .aboutCards .wrapper .cards__card img {
