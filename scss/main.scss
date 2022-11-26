@@ -252,6 +252,7 @@ body {
 					width: 100%;
 					border: 7px solid $white;
 					filter: grayscale(1);
+					transition: filter 0.7s;
 				}
 				&__title {
 					padding: 0.5em;
@@ -262,6 +263,7 @@ body {
 				}
 				&__text {
 					padding: 0.5em;
+					text-align: center;
 					margin-bottom: 90px;
 					font-size: 2rem;
 				}
@@ -278,10 +280,14 @@ body {
 					background: transparent;
 					border: 2px solid black;
 					cursor: pointer;
+					transition: background-color 0.7s;
 					&:hover {
 						background-color: $black;
 						color: $white;
 					}
+				}
+				.imgAdd {
+					display: none;
 				}
 			}
 		}

@@ -150,78 +150,54 @@
 
 	.offers {
 		.wrapper {
-			.offer {
-				display: grid;
-				grid-template-columns: repeat(3, 1fr);
-				grid-template-rows: repeat(3, 1fr);
-				.sectionName {
-					grid-column: 3/4;
-					grid-row: 1/4;
-					padding: 0.8em;
-					font-size: 60px;
-					&-text {
-						position: sticky;
-						top: 0;
-					}
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(1, 1fr);
+			.sectionName {
+				grid-column: 3/4;
+				grid-row: 1/2;
+				padding: 0.8em;
+				font-size: 5rem;
+				h3 {
+					position: sticky;
+					top: 0;
 				}
+			}
 
+			.offersCards {
+				grid-column: 1/3;
+				width: 100%;
 				.offerCard {
-					grid-column: 1/3;
-					padding: 1em;
-					box-shadow: 5px 5px 60px $newsletter;
-					&--one {
-						grid-row: 1/2;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					&:hover .imgAdd {
+						filter: none;
 					}
-					&--two {
-						grid-row: 2/3;
+					&__title {
+						font-size: 4.1rem;
 					}
-					&--three {
-						grid-row: 3/4;
+					&__text {
+						font-size: 2.2rem;
 					}
-					h4 {
-						font-size: 5.2rem;
-						padding: 1em;
-						font-family: 'Cormorant Garamond', serif;
-						color: $black;
-						text-transform: uppercase;
+					&__btn {
+						position: static;
+						width: 50%;
+						margin-bottom: 5%;
 						text-align: center;
 					}
-					.offerImg {
-						width: 100%;
-						border: 7px solid $white;
-						filter: grayscale(1);
-						&:hover {
-							filter: none;
-						}
-					}
-					.offerImgAdd {
+					.imgAdd {
 						display: flex;
 						justify-content: space-between;
-
-						.offerImg2 {
-							width: 33%;
-							border: 7px solid $white;
-							filter: grayscale(1);
-							&:hover {
-								filter: none;
-							}
+						border: 7px solid $white;
+						filter: grayscale(1);
+						transition: filter 0.7s;
+						&__one {
+							width: 40%;
 						}
-						.offerImgAddText {
-							padding: 1em;
-							width: 33%;
-							background-color: $white;
-							border: 7px solid $newsletter;
-							font-size: 2.4rem;
-							text-align: center;
-							color: $black;
-						}
-						.offerImg3 {
-							width: 33%;
-							border: 7px solid $white;
-							filter: grayscale(1);
-							&:hover {
-								filter: none;
-							}
+						&__two {
+							width: 40%;
 						}
 					}
 				}
