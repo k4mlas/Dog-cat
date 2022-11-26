@@ -235,84 +235,64 @@ body {
   box-shadow: 0px 2px 25px #e0d7d7;
 }
 
-.offers .wrapper .offer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-}
-.offers .wrapper .offer .sectionName {
-  grid-column: 3/4;
-  grid-row: 1/4;
-  padding: 0.3em;
-  font-size: 60px;
+.offers .wrapper .sectionName {
+  padding: 0.8em;
+  font-size: 2rem;
+  text-align: center;
   font-family: "Cormorant Garamond", serif;
 }
-.offers .wrapper .offer .sectionName-text {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-.offers .wrapper .offer .sectionName-text span {
+.offers .wrapper .sectionName span {
   color: #e0d7d7;
 }
-.offers .wrapper .offer .offerCard {
-  grid-column: 1/3;
-  padding: 1em;
-  box-shadow: 5px 5px 60px #9c80d8;
+.offers .wrapper .offersCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
-.offers .wrapper .offer .offerCard--one {
-  grid-row: 1/2;
+.offers .wrapper .offersCards .offerCard {
+  position: relative;
+  background-color: #e0d7d7;
+  margin-bottom: 3em;
 }
-.offers .wrapper .offer .offerCard--two {
-  grid-row: 2/3;
+.offers .wrapper .offersCards .offerCard:hover > img {
+  filter: none;
 }
-.offers .wrapper .offer .offerCard--three {
-  grid-row: 3/4;
-}
-.offers .wrapper .offer .offerCard h4 {
-  font-size: 5.2rem;
-  padding: 1em;
-  font-family: "Cormorant Garamond", serif;
-  color: black;
-  text-transform: uppercase;
-  text-align: center;
-}
-.offers .wrapper .offer .offerCard .offerImg {
+.offers .wrapper .offersCards .offerCard__img {
   width: 100%;
   border: 7px solid #e0d7d7;
   filter: grayscale(1);
 }
-.offers .wrapper .offer .offerCard .offerImg:hover {
-  filter: none;
-}
-.offers .wrapper .offer .offerCard .offerImgAdd {
-  display: flex;
-  justify-content: space-between;
-}
-.offers .wrapper .offer .offerCard .offerImgAdd .offerImg2 {
-  width: 33%;
-  border: 7px solid #e0d7d7;
-  filter: grayscale(1);
-}
-.offers .wrapper .offer .offerCard .offerImgAdd .offerImg2:hover {
-  filter: none;
-}
-.offers .wrapper .offer .offerCard .offerImgAdd .offerImgAddText {
-  padding: 1em;
-  width: 33%;
-  background-color: #e0d7d7;
-  border: 7px solid #9c80d8;
-  font-size: 2.4rem;
+.offers .wrapper .offersCards .offerCard__title {
+  padding: 0.5em;
   text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.1rem;
+  text-transform: uppercase;
+}
+.offers .wrapper .offersCards .offerCard__text {
+  padding: 0.5em;
+  margin-bottom: 90px;
+  font-size: 2rem;
+}
+.offers .wrapper .offersCards .offerCard__btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 0.5em;
   color: black;
+  font-size: 2.5rem;
+  text-align: right;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid black;
+  cursor: pointer;
 }
-.offers .wrapper .offer .offerCard .offerImgAdd .offerImg3 {
-  width: 33%;
-  border: 7px solid #e0d7d7;
-  filter: grayscale(1);
-}
-.offers .wrapper .offer .offerCard .offerImgAdd .offerImg3:hover {
-  filter: none;
+.offers .wrapper .offersCards .offerCard__btn:hover {
+  background-color: black;
+  color: #e0d7d7;
 }
 
 @media (min-width: 380px) {
@@ -321,6 +301,15 @@ body {
   }
   .header__text-titleCd {
     font-size: 1.7rem;
+  }
+  .offers .wrapper .sectionName {
+    font-size: 2.4rem;
+  }
+  .offers .wrapper .offersCards .offerCard__title {
+    font-size: 2.7rem;
+  }
+  .offers .wrapper .offersCards .offerCard__text {
+    font-size: 2rem;
   }
 }
 @media (min-width: 762px) {
@@ -338,6 +327,9 @@ body {
   }
   .aboutCards .wrapper .cards__card {
     width: 450px;
+  }
+  .offers .wrapper .sectionName {
+    font-size: 3.2rem;
   }
 }
 @media (min-width: 992px) {
@@ -473,6 +465,81 @@ body {
   }
   .aboutCards .wrapper .cards__card p {
     font-size: 1.9rem;
+  }
+  .offers .wrapper .offer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .offers .wrapper .offer .sectionName {
+    grid-column: 3/4;
+    grid-row: 1/4;
+    padding: 0.8em;
+    font-size: 60px;
+  }
+  .offers .wrapper .offer .sectionName-text {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  .offers .wrapper .offer .offerCard {
+    grid-column: 1/3;
+    padding: 1em;
+    box-shadow: 5px 5px 60px #9c80d8;
+  }
+  .offers .wrapper .offer .offerCard--one {
+    grid-row: 1/2;
+  }
+  .offers .wrapper .offer .offerCard--two {
+    grid-row: 2/3;
+  }
+  .offers .wrapper .offer .offerCard--three {
+    grid-row: 3/4;
+  }
+  .offers .wrapper .offer .offerCard h4 {
+    font-size: 5.2rem;
+    padding: 1em;
+    font-family: "Cormorant Garamond", serif;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .offers .wrapper .offer .offerCard .offerImg {
+    width: 100%;
+    border: 7px solid #e0d7d7;
+    filter: grayscale(1);
+  }
+  .offers .wrapper .offer .offerCard .offerImg:hover {
+    filter: none;
+  }
+  .offers .wrapper .offer .offerCard .offerImgAdd {
+    display: flex;
+    justify-content: space-between;
+  }
+  .offers .wrapper .offer .offerCard .offerImgAdd .offerImg2 {
+    width: 33%;
+    border: 7px solid #e0d7d7;
+    filter: grayscale(1);
+  }
+  .offers .wrapper .offer .offerCard .offerImgAdd .offerImg2:hover {
+    filter: none;
+  }
+  .offers .wrapper .offer .offerCard .offerImgAdd .offerImgAddText {
+    padding: 1em;
+    width: 33%;
+    background-color: #e0d7d7;
+    border: 7px solid #9c80d8;
+    font-size: 2.4rem;
+    text-align: center;
+    color: black;
+  }
+  .offers .wrapper .offer .offerCard .offerImgAdd .offerImg3 {
+    width: 33%;
+    border: 7px solid #e0d7d7;
+    filter: grayscale(1);
+  }
+  .offers .wrapper .offer .offerCard .offerImgAdd .offerImg3:hover {
+    filter: none;
   }
 }
 @media (min-width: 1200px) {

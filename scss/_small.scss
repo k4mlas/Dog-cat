@@ -9,4 +9,21 @@
 			}
 		}
 	}
+	.offers {
+		.wrapper {
+			.sectionName {
+				font-size: 2.4rem;
+			}
+			.offersCards {
+				.offerCard {
+					&__title {
+						font-size: 2.7rem;
+					}
+					&__text {
+						font-size: 2rem;
+					}
+				}
+			}
+		}
+	}
 }
