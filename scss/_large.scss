@@ -204,6 +204,18 @@
 			}
 		}
 	}
+
+	.headerImg {
+		background-image: url(../img/HeaderImgBig.jpg);
+		&__title {
+			padding: 1em;
+			font-size: 4.5rem;
+			font-family: 'Cormorant Garamond', serif;
+		}
+		&__text {
+			font-size: 3rem;
+		}
+	}
 }
 
 //1200px----------------------------------------------------------------------------

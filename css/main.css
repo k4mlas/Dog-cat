@@ -305,6 +305,39 @@ body {
   display: none;
 }
 
+.headerImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-style: italic;
+  background-image: url(../img/HeaderImgSmall.jpg);
+  width: 100%;
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  border: 7px solid #e0d7d7;
+}
+.headerImg__title {
+  padding: 1em;
+  font-size: 4rem;
+  font-family: "Cormorant Garamond", serif;
+}
+.headerImg__text {
+  font-size: 2.7rem;
+}
+
+.footer {
+  padding: 3em 1em;
+  font-size: 2rem;
+  border-top: 7px solid #e0d7d7;
+  text-align: center;
+  color: #e0d7d7;
+  background-color: #9c4d2d;
+}
+
 @media (min-width: 380px) {
   .header__text-title {
     font-size: 5.8rem;
@@ -529,6 +562,17 @@ body {
   }
   .offers .wrapper .offersCards .offerCard .imgAdd__two {
     width: 40%;
+  }
+  .headerImg {
+    background-image: url(../img/HeaderImgBig.jpg);
+  }
+  .headerImg__title {
+    padding: 1em;
+    font-size: 4.5rem;
+    font-family: "Cormorant Garamond", serif;
+  }
+  .headerImg__text {
+    font-size: 3rem;
   }
 }
 @media (min-width: 1200px) {
