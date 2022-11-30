@@ -329,6 +329,10 @@ body {
   font-size: 2.7rem;
 }
 
+.rooms .room {
+  background-color: #e0d7d7;
+}
+
 .contact {
   background-color: #9c80d8;
   padding: 6em 2em;
