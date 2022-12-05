@@ -327,8 +327,42 @@ body {
 //Rooms----------------------------------------------------------------------------------
 
 .rooms {
+	.sectionName {
+		font-family: 'Cormorant Garamond', serif;
+		text-align: center;
+		padding: 1em;
+		h3 {
+			font-size: 2.7rem;
+			span {
+				color: $white;
+			}
+		}
+	}
 	.room {
 		background-color: $white;
+		display: flex;
+		flex-direction: column;
+		padding: 1em;
+		margin-bottom: 1em;
+		&__name {
+			padding: 1em;
+			text-transform: uppercase;
+			text-align: center;
+			font-weight: bold;
+		}
+		&__text {
+			padding: 1em;
+			font-size: 2.1rem;
+		}
+		&__btn {
+			font-size: 2rem;
+			text-transform: uppercase;
+			background-color: $black;
+			color: $white;
+			padding: 1em;
+			cursor: pointer;
+			border: none;
+		}
 	}
 }
 
