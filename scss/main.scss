@@ -344,24 +344,41 @@ body {
 		flex-direction: column;
 		padding: 1em;
 		margin-bottom: 1em;
-		&__name {
-			padding: 1em;
-			text-transform: uppercase;
-			text-align: center;
-			font-weight: bold;
+		&__img {
+			img {
+				width: 100%;
+			}
 		}
 		&__text {
-			padding: 1em;
-			font-size: 2.1rem;
-		}
-		&__btn {
-			font-size: 2rem;
-			text-transform: uppercase;
-			background-color: $black;
-			color: $white;
-			padding: 1em;
-			cursor: pointer;
-			border: none;
+			&-name {
+				font-size: 2rem;
+				padding: 1em;
+				text-transform: uppercase;
+				text-align: center;
+				font-family: 'Cormorant Garamond', serif;
+				font-weight: bold;
+			}
+			&-text {
+				padding: 1em;
+				font-size: 2.1rem;
+			}
+			&-btn {
+				width: 100%;
+				margin-top: 1em;
+				font-size: 2rem;
+				text-transform: uppercase;
+				background-color: $black;
+				color: $white;
+				padding: 1em;
+				cursor: pointer;
+				border: none;
+				border: 2px solid $black;
+				transition: all 0.7s;
+				&:hover {
+					background-color: $white;
+					color: $black;
+				}
+			}
 		}
 	}
 }
