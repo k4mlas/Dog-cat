@@ -94,12 +94,12 @@ body {
 				color: $white;
 				transition: color 0.5s;
 			}
-			&:hover {
-				color: $white;
-				span {
-					color: $black;
-				}
-			}
+			// &:hover {
+			// 	color: $white;
+			// 	span {
+			// 		color: $black;
+			// 	}
+			// }
 		}
 		&-titleCd {
 			position: relative;
@@ -119,10 +119,7 @@ body {
 		background-image: url(../img/header0.jpg);
 		filter: grayscale(2);
 	}
-	&__bg-icon-one,
-	&__bg-icon-two {
-		display: none;
-	}
+	
 	.header__arrow {
 		display: none;
 	}

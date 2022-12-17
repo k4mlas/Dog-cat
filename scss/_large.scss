@@ -23,7 +23,7 @@
 					color: $white;
 					transition: color 0.5s;
 					&:hover {
-						color: $dark;
+						color: $black;
 					}
 				}
 			}
@@ -59,10 +59,7 @@
 			border: 7px solid $white;
 			filter: grayscale(2);
 		}
-		&__bg-icon-one,
-		&__bg-icon-two {
-			display: none;
-		}
+
 		.header__arrow {
 			display: block;
 			position: absolute;

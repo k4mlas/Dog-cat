@@ -125,12 +125,6 @@ body {
   color: #e0d7d7;
   transition: color 0.5s;
 }
-.header__text-title:hover {
-  color: #e0d7d7;
-}
-.header__text-title:hover span {
-  color: black;
-}
 .header__text-titleCd {
   position: relative;
   padding: 1em;
@@ -147,9 +141,6 @@ body {
   border: 7px solid #e0d7d7;
   background-image: url(../img/header0.jpg);
   filter: grayscale(2);
-}
-.header__bg-icon-one, .header__bg-icon-two {
-  display: none;
 }
 .header .header__arrow {
   display: none;
@@ -521,7 +512,7 @@ body {
     transition: color 0.5s;
   }
   .header .nav-desktop-link:hover {
-    color: #9c4d2d;
+    color: black;
   }
   .header .nav-mobile {
     display: none;
@@ -551,9 +542,6 @@ body {
     background-size: cover;
     border: 7px solid #e0d7d7;
     filter: grayscale(2);
-  }
-  .header__bg-icon-one, .header__bg-icon-two {
-    display: none;
   }
   .header .header__arrow {
     display: block;
